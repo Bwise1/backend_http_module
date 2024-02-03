@@ -1,0 +1,136 @@
+[
+  {
+    "id": "Dynastic_001",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780141182636",
+    "publication_year": 1925,
+    "publisher": "Penguin Books",
+    "genre": ["Fiction", "Classic"],
+    "language": "English",
+    "pages": 180,
+    "available_copies": 5,
+    "location": "Fiction Section, Shelf A",
+    "publication_info": {
+      "edition": "Reprint",
+      "format": "Paperback",
+      "dimensions": "5.1 x 0.5 x 7.8 inches",
+      "weight": "4.8 ounces"
+    }
+  },
+
+  {
+    "id": "Dynastic_002",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "isbn": "9780061120084",
+    "publication_year": 1960,
+    "publisher": "Harper Perennial Modern Classics",
+    "genre": ["Fiction", "Classic"],
+    "language": "English",
+    "pages": 336,
+    "available_copies": 3,
+    "location": "Fiction Section, Shelf B",
+    "publication_info": {
+      "edition": "50th Anniversary",
+      "format": "Paperback",
+      "dimensions": "5.3 x 0.8 x 8 inches",
+      "weight": "12.8 ounces"
+    }
+  },
+  {
+    "id": "Dynastic_003",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "isbn": "9780345391803",
+    "publication_year": 1979,
+    "publisher": "Del Rey",
+    "genre": ["Science Fiction", "Humor"],
+    "language": "English",
+    "pages": 224,
+    "available_copies": 2,
+    "location": "Science Fiction Section, Shelf C",
+    "publication_info": {
+      "edition": "Reprint",
+      "format": "Paperback",
+      "dimensions": "4.2 x 0.6 x 6.9 inches",
+      "weight": "6.4 ounces"
+    }
+  },
+  {
+    "id": "Dynastic_004",
+    "title": "1984",
+    "author": "George Orwell",
+    "isbn": "9780451524935",
+    "publication_year": 1949,
+    "publisher": "Signet Classic",
+    "genre": ["Fiction", "Dystopian"],
+    "language": "English",
+    "pages": 328,
+    "available_copies": 4,
+    "location": "Fiction Section, Shelf D",
+    "publication_info": {
+      "edition": "Reprint",
+      "format": "Mass Market Paperback",
+      "dimensions": "4.1 x 1 x 6.7 inches",
+      "weight": "6.4 ounces"
+    }
+  },
+  {
+    "id": "Dynastic_005",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "isbn": "9780141439518",
+    "publication_year": 1813,
+    "publisher": "Penguin Classics",
+    "genre": ["Fiction", "Romance"],
+    "language": "English",
+    "pages": 480,
+    "available_copies": 6,
+    "location": "Fiction Section, Shelf E",
+    "publication_info": {
+      "edition": "Reprint",
+      "format": "Paperback",
+      "dimensions": "5.1 x 1 x 7.8 inches",
+      "weight": "14.4 ounces"
+    }
+  },
+  {
+    "id": "Dynastic_006",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "isbn": "9780316769488",
+    "publication_year": 1951,
+    "publisher": "Back Bay Books",
+    "genre": ["Fiction", "Coming-of-Age"],
+    "language": "English",
+    "pages": 224,
+    "available_copies": 3,
+    "location": "Fiction Section, Shelf F",
+    "publication_info": {
+      "edition": "Reprint",
+      "format": "Paperback",
+      "dimensions": "5.2 x 0.6 x 8 inches",
+      "weight": "6.4 ounces"
+    }
+  },
+  {
+    "id": "Dynastic_007",
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "isbn": "9780544003415",
+    "publication_year": 1954,
+    "publisher": "Houghton Mifflin Harcourt",
+    "genre": ["Fantasy", "Adventure"],
+    "language": "English",
+    "pages": 1178,
+    "available_copies": 8,
+    "location": "Fantasy Section, Shelf G",
+    "publication_info": {
+      "edition": "Reprint",
+      "format": "Paperback",
+      "dimensions": "5.5 x 3.5 x 8.2 inches",
+      "weight": "2.6 pounds"
+    }
+  }
+]
