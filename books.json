@@ -6,7 +6,10 @@
     "isbn": "9780141182636",
     "publication_year": 1925,
     "publisher": "Penguin Books",
-    "genre": ["Fiction", "Classic"],
+    "genre": [
+      "Fiction",
+      "Classic"
+    ],
     "language": "English",
     "pages": 180,
     "available_copies": 5,
@@ -25,7 +28,10 @@
     "isbn": "9780061120084",
     "publication_year": 1960,
     "publisher": "Harper Perennial Modern Classics",
-    "genre": ["Fiction", "Classic"],
+    "genre": [
+      "Fiction",
+      "Classic"
+    ],
     "language": "English",
     "pages": 336,
     "available_copies": 3,
@@ -44,7 +50,10 @@
     "isbn": "9780345391803",
     "publication_year": 1979,
     "publisher": "Del Rey",
-    "genre": ["Science Fiction", "Humor"],
+    "genre": [
+      "Science Fiction",
+      "Humor"
+    ],
     "language": "English",
     "pages": 224,
     "available_copies": 2,
@@ -63,7 +72,10 @@
     "isbn": "9780451524935",
     "publication_year": 1949,
     "publisher": "Signet Classic",
-    "genre": ["Fiction", "Dystopian"],
+    "genre": [
+      "Fiction",
+      "Dystopian"
+    ],
     "language": "English",
     "pages": 328,
     "available_copies": 4,
@@ -82,7 +94,10 @@
     "isbn": "9780141439518",
     "publication_year": 1813,
     "publisher": "Penguin Classics",
-    "genre": ["Fiction", "Romance"],
+    "genre": [
+      "Fiction",
+      "Romance"
+    ],
     "language": "English",
     "pages": 480,
     "available_copies": 6,
@@ -101,7 +116,10 @@
     "isbn": "9780316769488",
     "publication_year": 1951,
     "publisher": "Back Bay Books",
-    "genre": ["Fiction", "Coming-of-Age"],
+    "genre": [
+      "Fiction",
+      "Coming-of-Age"
+    ],
     "language": "English",
     "pages": 224,
     "available_copies": 3,
@@ -113,25 +131,6 @@
       "weight": "6.4 ounces"
     }
   },
-  {
-    "id": "Dynastic_007",
-    "title": "The Lord of the Rings",
-    "author": "J.R.R. Tolkien",
-    "isbn": "9780544003415",
-    "publication_year": 1954,
-    "publisher": "Houghton Mifflin Harcourt",
-    "genre": ["Fantasy", "Adventure"],
-    "language": "English",
-    "pages": 1178,
-    "available_copies": 8,
-    "location": "Fantasy Section, Shelf G",
-    "publication_info": {
-      "edition": "Reprint",
-      "format": "Paperback",
-      "dimensions": "5.5 x 3.5 x 8.2 inches",
-      "weight": "2.6 pounds"
-    }
-  },
   "{\n    \"id\": \"Dynastic_008\",\n    \"title\": \"The Great Gatsby\",\n    \"author\": \"F. Scott Fitzgerald\",\n    \"isbn\": \"9780141182636\",\n    \"publication_year\": 1925,\n    \"publisher\": \"Penguin Books\",\n    \"genre\": [\n        \"Fiction\",\n        \"Classic\"\n    ],\n    \"language\": \"English\",\n    \"pages\": 180,\n    \"available_copies\": 5,\n    \"location\": \"Fiction Section, Shelf A\",\n    \"publication_info\": {\n        \"edition\": \"Reprint\",\n        \"format\": \"Paperback\",\n        \"dimensions\": \"5.1 x 0.5 x 7.8 inches\",\n        \"weight\": \"4.8 ounces\"\n    }\n}",
   {
     "id": "Dynastic_008",
@@ -140,7 +139,32 @@
     "isbn": "9780141182636",
     "publication_year": 1925,
     "publisher": "Penguin Books",
-    "genre": ["Fiction", "Classic"],
+    "genre": [
+      "Fiction",
+      "Classic"
+    ],
+    "language": "English",
+    "pages": 180,
+    "available_copies": 5,
+    "location": "Fiction Section, Shelf A",
+    "publication_info": {
+      "edition": "Reprint",
+      "format": "Paperback",
+      "dimensions": "5.1 x 0.5 x 7.8 inches",
+      "weight": "4.8 ounces"
+    }
+  },
+  {
+    "id": "Dynastic_008",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780141182636",
+    "publication_year": 1925,
+    "publisher": "Penguin Books",
+    "genre": [
+      "Fiction",
+      "Classic"
+    ],
     "language": "English",
     "pages": 180,
     "available_copies": 5,
