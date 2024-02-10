@@ -18,7 +18,6 @@
       "weight": "4.8 ounces"
     }
   },
-
   {
     "id": "Dynastic_002",
     "title": "To Kill a Mockingbird",
@@ -131,6 +130,26 @@
       "format": "Paperback",
       "dimensions": "5.5 x 3.5 x 8.2 inches",
       "weight": "2.6 pounds"
+    }
+  },
+  "{\n    \"id\": \"Dynastic_008\",\n    \"title\": \"The Great Gatsby\",\n    \"author\": \"F. Scott Fitzgerald\",\n    \"isbn\": \"9780141182636\",\n    \"publication_year\": 1925,\n    \"publisher\": \"Penguin Books\",\n    \"genre\": [\n        \"Fiction\",\n        \"Classic\"\n    ],\n    \"language\": \"English\",\n    \"pages\": 180,\n    \"available_copies\": 5,\n    \"location\": \"Fiction Section, Shelf A\",\n    \"publication_info\": {\n        \"edition\": \"Reprint\",\n        \"format\": \"Paperback\",\n        \"dimensions\": \"5.1 x 0.5 x 7.8 inches\",\n        \"weight\": \"4.8 ounces\"\n    }\n}",
+  {
+    "id": "Dynastic_008",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780141182636",
+    "publication_year": 1925,
+    "publisher": "Penguin Books",
+    "genre": ["Fiction", "Classic"],
+    "language": "English",
+    "pages": 180,
+    "available_copies": 5,
+    "location": "Fiction Section, Shelf A",
+    "publication_info": {
+      "edition": "Reprint",
+      "format": "Paperback",
+      "dimensions": "5.1 x 0.5 x 7.8 inches",
+      "weight": "4.8 ounces"
     }
   }
 ]

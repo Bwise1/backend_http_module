@@ -2,22 +2,18 @@ const http = require("http");
 const fs = require("fs");
 
 let books = [];
-const server = http.createServer((req, res) => {
-  //   fs.readFile("books.json", "utf8", function (err, data) {
-  //     if (err) {
-  //       res.writeHead(500, { "Content-Type": "application/json" });
-  //       res.end({ error: true, message: err });
-  //     }
+var data = fs.readFileSync("books.json", "utf8");
+books = JSON.parse(data);
 
+const server = http.createServer((req, res) => {
   if (req.url === "/books") {
     //GET METHOD
     if (req.method === "GET") {
-      var data = fs.readFileSync("books.json", "utf8");
-
       res.writeHead(200, { "Content-Type": "application/json" });
-      res.end(data);
+      res.end(JSON.stringify(books));
       // res.end();
     }
+
     //POST METHOD
     else if (req.method === "POST") {
       let body = "";
@@ -27,11 +23,17 @@ const server = http.createServer((req, res) => {
       });
 
       req.on("end", () => {
-        // console.log(body);
-        books.push(body);
-        res.end("ok");
+        books.push(JSON.parse(body));
+        fs.writeFileSync("books.json", JSON.stringify(books));
+        res.writeHead(201, { "Content-Type": "application/json" });
+        res.end(
+          JSON.stringify({
+            message: "Successfully added Book",
+            data: JSON.parse(body),
+          })
+        );
       });
-      console.log(books);
+
       //   res.end();
     } else {
       res.writeHead(405, { "Content-Type": "text/plain" });
