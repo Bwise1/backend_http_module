@@ -31,6 +31,11 @@ app.post("/books", (req, res) => {
 app.delete("/books", (req, res) => {
   const id = req.query.id;
 
+  console.log(id);
+  if (!id) {
+    res.status(400).send("Id is required");
+    return;
+  }
   for (let i in books) {
     if (books[i].id === id) {
       console.log("Found");
@@ -42,6 +47,29 @@ app.delete("/books", (req, res) => {
 });
 
 //UPDATE BOOK
+app.put("/books", (req, res) => {
+  const id = req.query.id;
+  let body = req.body;
+  let found = false;
+
+  console.log(id);
+  if (!id) {
+    res.status(400).send("Bad request");
+  }
+  for (let book in books) {
+    if (books[book].id === id) {
+      found = true;
+      books[book] = body;
+    }
+    fs.writeFileSync("../books.json", JSON.stringify(books, null, 2));
+  }
+
+  if (!found) {
+    res.status(404).send("Book not found");
+    return;
+  }
+  res.status(200).send({ message: "Book adaded successfully", data: body });
+});
 
 //
 app.listen(port, () => {

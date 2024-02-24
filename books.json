@@ -52,7 +52,7 @@
     "publisher": "Del Rey",
     "genre": [
       "Science Fiction",
-      "Humor"
+      "Horror"
     ],
     "language": "English",
     "pages": 224,
@@ -129,50 +129,6 @@
       "format": "Paperback",
       "dimensions": "5.2 x 0.6 x 8 inches",
       "weight": "6.4 ounces"
-    }
-  },
-  {
-    "id": "Dynastic_008",
-    "title": "The Great Gatsby 001",
-    "author": "F. Scott Fitzgerald",
-    "isbn": "9780141182636",
-    "publication_year": 1925,
-    "publisher": "Penguin Books",
-    "genre": [
-      "Fiction",
-      "Classic"
-    ],
-    "language": "English",
-    "pages": 180,
-    "available_copies": 5,
-    "location": "Fiction Section, Shelf A",
-    "publication_info": {
-      "edition": "Reprint",
-      "format": "Paperback",
-      "dimensions": "5.1 x 0.5 x 7.8 inches",
-      "weight": "4.8 ounces"
-    }
-  },
-  {
-    "id": "Dynastic_008",
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "isbn": "9780141182636",
-    "publication_year": 1925,
-    "publisher": "Penguin Books",
-    "genre": [
-      "Fiction",
-      "Classic"
-    ],
-    "language": "English",
-    "pages": 180,
-    "available_copies": 5,
-    "location": "Fiction Section, Shelf A",
-    "publication_info": {
-      "edition": "Reprint",
-      "format": "Paperback",
-      "dimensions": "5.1 x 0.5 x 7.8 inches",
-      "weight": "4.8 ounces"
     }
   }
 ]
