@@ -1,0 +1,20 @@
+[
+  {
+    "operation": "add",
+    "time": "2024-03-09T10:46:59.665Z",
+    "operands": {
+      "num1": 23,
+      "num2": 5
+    },
+    "result": 28
+  },
+  {
+    "operation": "subtract",
+    "time": "2024-03-09T10:52:39.572Z",
+    "operands": {
+      "num1": 23,
+      "num2": 5
+    },
+    "result": 18
+  }
+]
