@@ -8,5 +8,33 @@
     "id": 2,
     "name": "Jane Doe",
     "email": "janedoe@email.com"
+  },
+  {
+    "email": "tester.tester.com",
+    "name": "tester",
+    "username": "tester001",
+    "password": "123456789",
+    "id": "71daf4e5-5a72-45b6-b200-20b89a88df26"
+  },
+  {
+    "email": "testr.tester.com",
+    "name": "tester",
+    "username": "teser001",
+    "password": "$2b$10$.l2idZlggtzw9YyD9HcKnOoLXWfB13YPo/NxbzasGoXfyNplu6RAW",
+    "id": "eec3a7ce-3f6d-478a-bf9b-ba5d62cf77d4"
+  },
+  {
+    "email": "testr.tster.com",
+    "name": "tester",
+    "username": "tesr001",
+    "password": "$2b$10$kV78hLgXodd1veenZ25QQ.j2VJ2Wdby/UOHHyXNvOLBdofXQMO9ZS",
+    "id": "bbca4969-d7e2-4b77-939a-172c1c18a99f"
+  },
+  {
+    "email": "testr.tstr.com",
+    "name": "tester",
+    "username": "tesr01",
+    "password": "$2b$10$CzyiEvAnJIJvcPFJkRjyIuuzi/LOmCkw9FAk.Lyp2gVuDd9e4egsi",
+    "id": "1fe51a89-7bde-49a5-bc77-67d32614680f"
   }
 ]
