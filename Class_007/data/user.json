@@ -36,5 +36,12 @@
     "username": "tesr01",
     "password": "$2b$10$CzyiEvAnJIJvcPFJkRjyIuuzi/LOmCkw9FAk.Lyp2gVuDd9e4egsi",
     "id": "1fe51a89-7bde-49a5-bc77-67d32614680f"
+  },
+  {
+    "email": "testssdr.tstr.com",
+    "name": "tester",
+    "username": "tesdsdsr01",
+    "password": "$2b$10$PY64U08Jdwd/BplMeF8K.umJYYrgfmIDdPU7EfGEnyeC.9wDdF7k.",
+    "id": "4b5fff8e-12f1-4505-9190-5b58df940cdd"
   }
 ]
