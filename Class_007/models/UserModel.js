@@ -41,6 +41,22 @@ function getUserByUsername(username) {
   return user;
 }
 
+function getUserById(id) {
+  let user = null;
+
+  //readTheFile
+  const users = readFile(userFile);
+  //look for user with given username
+  for (let i in users) {
+    if (users[i].id === id) {
+      user = users[i];
+      return user;
+    }
+  }
+  //return the user
+  return user;
+}
+
 function registerUser(userDetails) {
   writeFile(userFile, userDetails);
   return userDetails;
@@ -50,4 +66,5 @@ module.exports = {
   getUserByEmail,
   getUserByUsername,
   registerUser,
+  getUserById,
 };

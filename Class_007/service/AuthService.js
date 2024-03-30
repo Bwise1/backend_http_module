@@ -26,11 +26,34 @@ async function RegisterUser(userDetails) {
         return userDetails;
       }
     }
+
+    // else {
+    //   throw new Error("Email already exists");
+    // }
   } catch (error) {
-    console.log(error);
+    // console.log(error)
+    // throw error;
+  }
+}
+
+async function LoginUser(username, password) {
+  //call the model function getByUsername
+  //compare password
+  const user = getUserByUsername(username);
+
+  if (!user) {
+    return user;
+  }
+
+  const isMatch = await bcrypt.compare(password, user.password);
+  console.log("from service", isMatch);
+  if (isMatch) {
+    delete user.password;
+    return user;
   }
 }
 
 module.exports = {
   RegisterUser,
+  LoginUser,
 };
