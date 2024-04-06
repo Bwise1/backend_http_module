@@ -3,7 +3,12 @@ const express = require("express");
 const router = express.Router();
 const { v4: uuidv4 } = require("uuid");
 
-const { createTask, getUsersTasks } = require("../models/TaskModel");
+const {
+  createTask,
+  getUsersTasks,
+  getUsersTasksByID,
+  deleteUsersTaskByID,
+} = require("../models/TaskModel");
 const { getUserById } = require("../models/UserModel");
 
 router.post("/:id", async (req, res) => {
@@ -45,4 +50,19 @@ router.get("/:id", async (req, res) => {
     .json({ message: "tasks returned successfully", data: yourTask });
 });
 
+//get users task by id
+router.get("/:id/:taskId", async (req, res) => {
+  const { id, taskId } = req.params;
+
+  let task = getUsersTasksByID(id, taskId);
+  res.status(200).json({ message: "task returned successfully", data: task });
+});
+
+//delete users task
+router.delete("/:id/:taskId", async (req, res) => {
+  const { id, taskId } = req.params;
+
+  deleteUsersTaskByID(id, taskId);
+  res.sendStatus(204);
+});
 module.exports = router;

@@ -1,15 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "John Doe",
-    "email": "johndoe@email.com"
-  },
-  {
-    "id": 2,
-    "name": "Jane Doe",
-    "email": "janedoe@email.com"
-  },
-  {
     "email": "tester.tester.com",
     "name": "tester",
     "username": "tester001",

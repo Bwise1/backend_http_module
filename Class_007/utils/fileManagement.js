@@ -22,7 +22,17 @@ function writeFile(fileName, newData) {
   }
 }
 
+function modifyFile(fileName, newData) {
+  try {
+    let rawData = readFile(fileName);
+    fs.writeFileSync(fileName, JSON.stringify(newData, null, 2));
+  } catch (error) {
+    throw error;
+  }
+}
+
 module.exports = {
   readFile,
   writeFile,
+  modifyFile,
 };
