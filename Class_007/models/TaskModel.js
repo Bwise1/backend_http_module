@@ -39,14 +39,22 @@ function deleteUsersTaskByID(id, taskId) {
     }
   }
 
-  [{ id: 3 }, { id: 3 }, { id: 2 }, { id: 6 }];
-  // [({ id: 3, taskId: 19 }, { id: 3, taskId: 12 })];
-
-  //splice
-  [{ id: 3, taskId: 12 }];
   console.log(tasks);
   modifyFile(taskFile, tasks);
   [{ id: 3, taskId: 12 }];
+}
+
+function editUsersTaskByID(id, taskId, task) {
+  //find all the task that belongs to the id
+  //find the task with the given taskId,
+  //replace the task details with the given task
+
+  let usersTasks = getUsersTasks(id);
+
+  let oldDetails = filterByElement(usersTasks, taskId, "id");
+  console.log(oldDetails);
+
+  //TODO: replace the task from the one saved with the new Task details and make sure all fields are pereserved
 }
 
 function filterByElement(array, value, key) {
@@ -71,4 +79,7 @@ module.exports = {
   getUsersTasks,
   getUsersTasksByID,
   deleteUsersTaskByID,
+  editUsersTaskByID,
 };
+
+//C-Create/Insert    R-Read      U-Update      D-Delete //

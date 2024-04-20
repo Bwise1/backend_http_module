@@ -8,6 +8,7 @@ const {
   getUsersTasks,
   getUsersTasksByID,
   deleteUsersTaskByID,
+  editUsersTaskByID,
 } = require("../models/TaskModel");
 const { getUserById } = require("../models/UserModel");
 
@@ -64,5 +65,17 @@ router.delete("/:id/:taskId", async (req, res) => {
 
   deleteUsersTaskByID(id, taskId);
   res.sendStatus(204);
+});
+
+//edit
+router.put("/:id/:taskId", async (req, res) => {
+  const task = req.body;
+  const { id, taskId } = req.params;
+
+  // console.log("task:", task, "id:", id, "taskiD: ", taskId);
+  let EditedTask = editUsersTaskByID(id, taskId, task);
+  res
+    .status(200)
+    .json({ message: "task edited successfully", data: EditedTask });
 });
 module.exports = router;
