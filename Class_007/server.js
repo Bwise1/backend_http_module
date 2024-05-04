@@ -3,11 +3,11 @@ const bcrypt = require("bcrypt");
 
 const { readFile, writeFile } = require("./utils/fileManagement");
 
-const router = require("./controllers/AuthController");
+const authRouter = require("./controllers/AuthController");
 const taskRouter = require("./controllers/TaskController");
 
 const app = express();
-const router2 = express.Router();
+const router = express.Router();
 
 app.use(express.json());
 
@@ -44,10 +44,10 @@ app.post("/login", async (req, res) => {
     .json({ message: "logged in successfully", data: loggedInUser });
 });
 
-router2.use("/auth", router);
-router2.use("/tasks", taskRouter);
+router.use("/auth", authRouter);
+router.use("/tasks", taskRouter);
 
-app.use(router2);
+app.use(router);
 
 /*Middleware sample */
 // app.use("/user/:id", (req, res, next) => {
