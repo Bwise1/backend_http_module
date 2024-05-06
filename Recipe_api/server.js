@@ -8,9 +8,11 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+
 const router = express.Router();
 
 const url = process.env.MONGODB_URL;
+
 try {
   mongoose.connect(url);
 } catch (error) {
@@ -21,6 +23,14 @@ const port = process.env.PORT;
 
 router.use("/auth", authRouter);
 // router.use("/recipe", recipeRouter);
+
+router.get("/health", (req, res) => {
+  res.send({ message: "App running" });
+});
+
+router.get("/", (req, res) => {
+  res.send({ message: "Recipe api" });
+});
 
 app.use(router);
 
