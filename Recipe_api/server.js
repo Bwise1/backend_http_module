@@ -3,6 +3,9 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 
 const authRouter = require("./controllers/auth");
+const recipeRouter = require("./controllers/recipe");
+
+const authMiddleware = require("./middleware/auth");
 
 dotenv.config();
 
@@ -22,7 +25,7 @@ try {
 const port = process.env.PORT;
 
 router.use("/auth", authRouter);
-// router.use("/recipe", recipeRouter);
+router.use("/recipes", authMiddleware, recipeRouter);
 
 router.get("/health", (req, res) => {
   res.send({ message: "App running" });

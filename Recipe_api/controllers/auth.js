@@ -1,14 +1,65 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
-const authRouter = express.Router();
+const jwt = require("jsonwebtoken");
+
 const Users = require("../models/user");
 
-authRouter.post("/login", (req, res) => {
-  //uses jwtwebtoken for auth
-  //use Users.findOne() to check if email exists
-  //compare password with bcryot func
-  //sign jwt and resturn response
-  console.log(req.body);
+const authRouter = express.Router();
+
+authRouter.post("/login", async (req, res) => {
+  const user = req.body;
+
+  //checking DB for the user
+
+  try {
+    const prevUser = await Users.findOne({ email: user.email });
+    console.log(prevUser);
+
+    //return error if no user with the email is in the DB
+    if (!prevUser) {
+      res
+        .status(401)
+        .send({ error: true, message: "email or password incorrect" });
+
+      return;
+    }
+
+    //check if returned user has same password as provided
+    var isPasswordValid = bcrypt.compareSync(user.password, prevUser.password);
+
+    //return error if the provided password is wrong
+    if (!isPasswordValid) {
+      res
+        .status(401)
+        .send({ error: true, message: "email or password incorrect" });
+
+      return;
+    }
+
+    //signing token
+    var token = jwt.sign(
+      { id: prevUser._id, email: prevUser.email },
+      process.env.JWT_SECRET,
+      { expiresIn: process.env.JWT_SECRET_EXPIRES }
+    );
+
+    res.send({
+      message: "user logged in successfully",
+      user: {
+        id: prevUser._id,
+        email: prevUser.email,
+        firstname: prevUser.firstname,
+        lastname: prevUser.lastname,
+      },
+      token: {
+        accessToken: token,
+        expiresIn: process.env.JWT_SECRET_EXPIRES,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ error: true, message: "Internal Server error" });
+  }
 });
 
 authRouter.post("/register", async (req, res) => {
