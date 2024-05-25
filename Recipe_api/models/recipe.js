@@ -1,23 +1,23 @@
 const mongoose = require("mongoose");
 
 const recipesSchema = new mongoose.Schema({
-  title: {
+  title: {           //"Ginger Bread"
     required: true,
     type: String,
   },
-  description: {
+  description: {    //"Ginger Bread is a traditional Christmas treat."
     required: true,
     type: String,
   },
-  ingredients: {
+  ingredients: {     //["flour", "sugar", "ginger", "butter", "salt"]
     required: true,
     type: [String],
   },
-  instructions: {
+  instructions: {   //["Mix all the ingredients together.", "Bake for 30 minutes."]
     required: true,
     type: [String],
   },
-  owner: {
+  owner: {          //ObjectId("5f9b7b5f1c9d440000f9d3a3")
     type: mongoose.Schema.Types.ObjectId,
     ref: "Users",
   },

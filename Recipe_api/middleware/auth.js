@@ -6,7 +6,7 @@ authMiddleware = (req, res, next) => {
     return res.status(403).send({ error: true, message: "no token provided" });
   }
 
-  const token = authHeader.split(" ")[1];
+  const token = authHeader.split(" ")[1]; //Bearer eyesdskdjbnsldks'l;kdjl lsjhdnkmsdkjlhsd
   jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
     if (err) {
       console.log(err);
